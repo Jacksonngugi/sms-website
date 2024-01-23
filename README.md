@@ -1,5 +1,8 @@
-In this project i build a web application for an organisation where they can store contacts of their clients and can contact their client through sms as long as their have access to internet and browser.
-I used html,css and javascript to biuld the frontend of the application
-Django for backend of the application.
-Africastalking API to send sms.
-Sqlite db.
+
+# Flashysms
+___
+Flashysms is a web based application for sending sms and also storing contacts and contacts information.
+It's built using **Django framwork** for backend side,**html,css and javascript** for frontend side and **africastalking** API for sending sms.
+
+Being a web base app make it easier for the user to send sms as long as they have access to internet,browser and login credential to login to the website and also the user can send mass sms at once.
+This app is useful in an organisation if they have multiple customer service care agents because both agents can use the system at the same time but with different credential each.
