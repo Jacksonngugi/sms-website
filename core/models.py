@@ -38,6 +38,13 @@ class chats(models.Model):
         return self.user_name
     
 
+class smscounter(models.Model):
+    sent_sms = models.IntegerField(default = 0)
+    remaining_sms = models.IntegerField(default = 0)
+
 class sms_count(models.Model):
-    sent_sms = models.IntegerField(default=0)
-    remaining_sms = models.IntegerField(default=0)
+    name = models.CharField(max_length = 30)
+    count = models.IntegerField(default = 0)
+
+    def __str__(self) -> str:
+        return self.name

@@ -31,11 +31,12 @@ def login(request):
 @login_required(login_url='login')
 def index (request):
     contacts = contact.objects.all()
-    SMScount = sms_count.objects.all()
-    
+    sent = sms_count.objects.get(name = "sent_sms")
+    remaining = sms_count.objects.get(name = "remaining_sms")
     context = {
         'no_contacts':len(contacts),
-        'sms_count':SMScount,
+        'sent':sent,
+        'remaining' : remaining
     }
     return render(request,"index.html",context)
 
@@ -108,7 +109,8 @@ def Chats(request):
         user_contact = contact.objects.get(name=name)
         user_messages = Message.objects.filter(user=user_contact)
         chat_members = chats.objects.all()
-        print(user_messages)
+        # chat_member = chats.objects.values_list('user_name')[0]
+        # print([chat_member])
         context = {
             'members':chat_members,
             'messages':user_messages,

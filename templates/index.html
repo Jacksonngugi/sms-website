@@ -300,22 +300,6 @@
           </li>
         </ul>
       </li><!-- End Components Nav -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-login.html">
-          <i class="bi bi-box-arrow-in-right"></i>
-          <span>Login</span>
-        </a>
-      </li><!-- End Login Page Nav -->
-
-      </li><!-- End Error 404 Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-blank.html">
-          <i class="bi bi-file-earmark"></i>
-          <span>Blank</span>
-        </a>
-      </li><!-- End Blank Page Nav -->
-
     </ul>
 
   </aside><!-- End Sidebar-->
@@ -364,7 +348,7 @@
                       <i class="bi bi-cart"></i>
                     </div> -->
                     <div class="ps-3">
-                      <h2>{{sms_count.sent_sms}}</h2>
+                      <h2>{{sent.count}}</h2>
                       <!-- <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span> -->
 
                     </div>
@@ -399,7 +383,7 @@
                       <i class="bi bi-currency-dollar"></i>
                     </div> -->
                     <div class="ps-3">
-                      <h2>3,264</h2>
+                      <h2>{{remaining.count}}</h2>
                       <!-- <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">increase</span> -->
 
                     </div>
