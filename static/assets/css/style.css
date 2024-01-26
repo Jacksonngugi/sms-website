@@ -263,12 +263,17 @@ h6 {
   border-radius: 5px;
 }
 
+.result-box {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
 .result-box ul {
   /* border-top: 1px solid #999; */
   padding: 2px 10px;
 }
 
-.result-box ul ul{
+.result-box ul li{
   cursor: pointer;
   list-style: none;
   border-radius: 3px;
